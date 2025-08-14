@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Exposing Control: Daily Brief — Daily Shock Factor™ Alerts</title>
+  <meta name="description" content="AI-powered daily threat brief with Shock Factor™, local alerts, and action steps." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav__left">
+    <!-- replace with your logo file later -->
+    <img src="assets/logo.svg" alt="Exposing Control logo" class="logo" />
+    <span class="brand">Exposing Control: Daily Brief</span>
+  </div>
+  <nav class="nav__right">
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn btn--sm btn--outline" href="#join">Get Early Access</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero__copy">
+      <h1>Daily <span class="accent">Shock Factor™</span> Alerts.<br/> Know today. Survive tomorrow.</h1>
+      <p class="lead">
+        AI scans news, official feeds, and social signals to score real-world threats from
+        <strong>1–10</strong> and tells you <em>exactly what to do</em>.
+      </p>
+      <div class="cta">
+        <a class="btn btn--lg" href="#join">Get Early Access</a>
+        <a class="btn btn--ghost" href="#how">See how it works</a>
+      </div>
+      <div class="badges">
+        <span class="badge">Shock Meter 1–10</span>
+        <span class="badge">Local Alerts</span>
+        <span class="badge">Auto-Clipped News</span>
+        <span class="badge">Daily Action Step</span>
+      </div>
+    </div>
+    <div class="hero__viz">
+      <div class="meter">
+        <div class="meter__scale"><span>1</span><span>3</span><span>5</span><span>7</span><span>10</span></div>
+        <div class="meter__needle" style="--score:8.3"></div>
+        <div class="meter__label"><strong>Today’s Shock:</strong> 8.3 <em>Elevated</em></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="strip"><p>Built by <strong>@ExposingControl</strong> • Join the first 1,000 members for founder pricing.</p></section>
+
+  <section id="features" class="features">
+    <h2>What you get</h2>
+    <div class="grid">
+      <article class="card"><h3>Daily Threat Brief</h3><p>Shock Factor™, confidence %, and a clear action step.</p></article>
+      <article class="card"><h3>My Area Alerts</h3><p>Geo-targeted weather, disaster, outage, and keyword alerts.</p></article>
+      <article class="card"><h3>Auto-Clipped News</h3><p>Instant branded clips to X & YouTube.</p></article>
+      <article class="card"><h3>Prepper Tools</h3><p>Bug-out bag checklist, water & power calculators, offline packs.</p></article>
+      <article class="card"><h3>Intelligence Vault</h3><p>Archive of briefs, clips, and evergreen deep-dives.</p></article>
+      <article class="card"><h3>Pro Automations</h3><p>Calendar + Critical Override for ≥ 9 (double-confirm logic).</p></article>
+    </div>
+  </section>
+
+  <section id="how" class="how">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><strong>Scan:</strong> AI watches news & official feeds 24/7.</li>
+      <li><strong>Score:</strong> Events get a 1–10 Shock Factor™ with confidence and sources.</li>
+      <li><strong>Act:</strong> Get a 60s brief + action, with local alerts if it’s near you.</li>
+      <li><strong>Amplify:</strong> Auto-clip the best 15–60s and post to X/YouTube.</li>
+    </ol>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <h2>Pricing</h2>
+    <div class="tiers">
+      <div class="tier">
+        <h3>Free</h3>
+        <ul>
+          <li>Today’s global Shock score</li>
+          <li>2 brief cards/day (blur after)</li>
+          <li>Limited local alerts</li>
+        </ul>
+        <div class="price">$0</div>
+      </div>
+      <div class="tier tier--pro">
+        <h3>Pro</h3>
+        <ul>
+          <li>Full Daily Brief + archives</li>
+          <li>My Area alerts + push</li>
+          <li>Auto-Clip & scheduling calendar</li>
+          <li>Prepper tools + offline packs</li>
+          <li>Critical Override for ≥ 9</li>
+        </ul>
+        <div class="price">$13.33<span>/mo</span></div>
+        <a href="#join" class="btn btn--block">Start 7-day free trial</a>
+        <p class="small mt4">or $111/year</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="join" class="join">
+    <h2>Get early access</h2>
+    <p>Join the list and be first to try Pro when we open the doors.</p>
+    <!-- FASTEST: Formspree. Create a form and replace YOUR_FORM_ID below -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="join__form">
+      <input type="email" name="email" placeholder="your@email.com" required />
+      <button class="btn" type="submit">Join the waitlist</button>
+    </form>
+    <p class="micro">By joining, you agree to our <a href="#!">Terms</a> and <a href="#!">Privacy</a>.</p>
+  </section>
+
+  <section id="faq" class="faq">
+    <h2>FAQ</h2>
+    <details><summary>Do I need GoDaddy’s builder?</summary><p>No. Keep GoDaddy as registrar and point DNS to Vercel. You’ll use this custom page.</p></details>
+    <details><summary>When does Pro launch at $13.33?</summary><p>Sign up for the waitlist — Pro opens soon.</p></details>
+    <details><summary>What is Shock Factor™?</summary><p>A 1–10 daily risk score with transparent rubric and confidence.</p></details>
+  </section>
+</main>
+
+<footer class="footer">
+  <div>© <span id="year"></span> Exposing Control</div>
+  <div class="footer__links">
+    <a href="#!">Terms</a><a href="#!">Privacy</a>
+    <a href="https://x.com/ExposingControl" target="_blank" rel="noopener">X</a>
+    <a href="#" target="_blank" rel="noopener">YouTube</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
