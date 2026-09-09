@@ -244,16 +244,14 @@ p {
   color: var(--ink);
 }
 
-.brand__mark {
-  display: grid;
-  place-items: center;
-  width: 36px;
-  height: 44px;
-}
-
-.brand__mark img {
-  width: 26px;
-  height: auto;
+.brand__logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--silver);
+  background: #fff;
+  flex-shrink: 0;
 }
 
 .brand__text {
@@ -334,11 +332,9 @@ p {
   padding: 48px 0 24px;
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 48px;
-  align-items: center;
+.hero-copy {
+  max-width: 46rem;
+  margin-bottom: 28px;
 }
 
 .lede {
@@ -368,62 +364,43 @@ p {
       rgba(255, 255, 255, 0.16) 0 1px,
       transparent 1px 4px
     ),
-    linear-gradient(180deg, #f3f4f6 0%, #c5cad1 42%, #edeff2 58%, #9aa1ab 100%);
+    linear-gradient(180deg, #f3f4f6 0%, #d7dbe1 48%, #c5cad1 100%);
   border: 1px solid var(--silver);
   box-shadow: var(--shadow);
 }
 
 .hero-stage__letterbox {
-  height: 14px;
+  height: 12px;
   background: var(--black);
 }
 
-.asset-slot {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 28px 24px 18px;
-  min-height: 340px;
+.hero-stage__frame {
+  background: #eceff3;
+  line-height: 0;
 }
 
-.asset-slot__label {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  margin: 0;
-  padding: 4px 8px;
-  background: rgba(251, 250, 247, 0.88);
-  border: 1px dashed var(--line-strong);
-  font-family: var(--mono);
-  font-size: 0.65rem;
-  letter-spacing: 0.04em;
-  color: var(--muted);
-}
-
-.asset-slot__label code {
-  font-family: inherit;
-  color: var(--red);
-}
-
-.hero-stage__cross {
-  width: min(180px, 42%);
-  filter: drop-shadow(0 8px 16px rgba(20, 23, 26, 0.18));
-}
-
-.hero-stage__wordmark {
-  width: min(420px, 88%);
+.hero-banner {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .hero-stage figcaption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin: 0;
-  padding: 10px 14px 14px;
-  font-size: 0.8rem;
-  color: var(--muted);
-  background: rgba(251, 250, 247, 0.7);
+  padding: 10px 14px 12px;
+  font-size: 0.92rem;
+  color: var(--ink);
+  background: rgba(251, 250, 247, 0.88);
   border-top: 1px solid var(--line);
+}
+
+.hero-stage__motif {
+  width: 16px;
+  height: auto;
+  flex-shrink: 0;
 }
 
 .lane-grid,
@@ -795,7 +772,6 @@ p {
 }
 
 @media (max-width: 860px) {
-  .hero-grid,
   .about-grid,
   .brief-grid,
   .sample-grid {

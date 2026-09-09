@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Exposing Control mark">
-  <rect width="32" height="32" rx="6" fill="#F4F2EE"/>
-  <path fill="#1A1D21" fill-rule="evenodd" d="M13.2 4.2h5.6v7.2h7.6v4.4h-7.6v12h-5.6v-12H5.6V11.4h7.6V4.2Z M16.7 4 14.3 11.2l3.8 1.8-4.4 7.4 4 7.6.9 0-4-7.4 4.4-7.4-3.8-1.8 2.3-7.2Z"/>
-  <path d="M16.8 4.4 14.5 11.3l3.7 1.8-4.3 7.3 3.9 7.6" fill="none" stroke="#7A1518" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>

@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Exposing Control — The Brief</title>
   <meta name="description" content="Exposing Control investigates concentrated power, systems of control, hidden history, AI and surveillance, disclosure, and contested claims by asking difficult questions and following the evidence." />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="64x64" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -17,9 +18,14 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="#top" id="top">
-        <span class="brand__mark" aria-hidden="true">
-          <img src="assets/shattered-cross.svg" alt="" width="28" height="40" />
-        </span>
+        <img
+          class="brand__logo"
+          src="assets/logo.png"
+          srcset="assets/logo.png 1x, assets/logo@2x.png 2x"
+          width="48"
+          height="48"
+          alt="Exposing Control logo"
+        />
         <span class="brand__text">
           <span class="brand__primary">Exposing Control</span>
           <span class="brand__secondary">The Brief</span>
@@ -43,27 +49,34 @@
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="kicker">Exposing Control · Independent investigations</p>
-          <h1 id="hero-title">Expose the systems shaping your world.</h1>
-          <p class="lede">Power. Control. Hidden history. AI. Disclosure. We ask the questions others avoid and follow the evidence wherever it leads.</p>
-          <div class="hero-actions">
-            <a class="btn btn--primary btn--lg" href="https://www.youtube.com/@exposingcontrol" target="_blank" rel="noopener noreferrer">Watch Exposing Control</a>
-            <a class="btn btn--ghost btn--lg" href="#brief">Join the Brief</a>
-          </div>
-          <p class="hero-note">Evidence before conclusion. Claims are labeled. What cannot be verified stays unknown.</p>
+      <div class="wrap hero-copy">
+        <p class="kicker">Exposing Control · Independent investigations</p>
+        <h1 id="hero-title">Expose the systems shaping your world.</h1>
+        <p class="lede">Power. Control. Hidden history. AI. Disclosure. We ask the questions others avoid and follow the evidence wherever it leads.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary btn--lg" href="https://www.youtube.com/@exposingcontrol" target="_blank" rel="noopener noreferrer">Watch Exposing Control</a>
+          <a class="btn btn--ghost btn--lg" href="#brief">Join the Brief</a>
         </div>
+        <p class="hero-note">Evidence before conclusion. Claims are labeled. What cannot be verified stays unknown.</p>
+      </div>
 
+      <div class="wrap">
         <figure class="hero-stage">
           <div class="hero-stage__letterbox" aria-hidden="true"></div>
-          <div class="asset-slot" data-expected-file="assets/logo.svg">
-            <p class="asset-slot__label">Asset slot · official logo pending · <code>assets/logo.svg</code></p>
-            <img class="hero-stage__cross" src="assets/shattered-cross.svg" alt="" width="180" height="252" />
-            <img class="hero-stage__wordmark" src="assets/wordmark.svg" alt="Exposing Control placeholder wordmark. Not the official logo." width="420" height="118" />
+          <div class="hero-stage__frame">
+            <img
+              class="hero-banner"
+              src="assets/hero-banner.jpg"
+              width="1500"
+              height="500"
+              alt="Exposing Control banner with Honoring Jesus — One Day At A Time"
+            />
           </div>
           <div class="hero-stage__letterbox" aria-hidden="true"></div>
-          <figcaption>Placeholder motif and wordmark for layout. Official brand artwork is not in this repository.</figcaption>
+          <figcaption>
+            <img class="hero-stage__motif" src="assets/shattered-cross.svg" alt="" width="16" height="22" />
+            <span>Honoring Jesus — One Day At A Time</span>
+          </figcaption>
         </figure>
       </div>
     </section>
