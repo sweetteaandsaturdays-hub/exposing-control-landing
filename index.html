@@ -2,136 +2,322 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Exposing Control: Daily Brief — Daily Shock Factor™ Alerts</title>
-  <meta name="description" content="AI-powered daily threat brief with Shock Factor™, local alerts, and action steps." />
-  <link rel="icon" href="assets/favicon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exposing Control — The Brief</title>
+  <meta name="description" content="Exposing Control investigates concentrated power, systems of control, hidden history, AI and surveillance, disclosure, and contested claims by asking difficult questions and following the evidence." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="nav">
-  <div class="nav__left">
-    <!-- replace with your logo file later -->
-    <img src="assets/logo.svg" alt="Exposing Control logo" class="logo" />
-    <span class="brand">Exposing Control: Daily Brief</span>
-  </div>
-  <nav class="nav__right">
-    <a href="#features">Features</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#faq">FAQ</a>
-    <a class="btn btn--sm btn--outline" href="#join">Get Early Access</a>
-  </nav>
-</header>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<main>
-  <section class="hero">
-    <div class="hero__copy">
-      <h1>Daily <span class="accent">Shock Factor™</span> Alerts.<br/> Know today. Survive tomorrow.</h1>
-      <p class="lead">
-        AI scans news, official feeds, and social signals to score real-world threats from
-        <strong>1–10</strong> and tells you <em>exactly what to do</em>.
-      </p>
-      <div class="cta">
-        <a class="btn btn--lg" href="#join">Get Early Access</a>
-        <a class="btn btn--ghost" href="#how">See how it works</a>
-      </div>
-      <div class="badges">
-        <span class="badge">Shock Meter 1–10</span>
-        <span class="badge">Local Alerts</span>
-        <span class="badge">Auto-Clipped News</span>
-        <span class="badge">Daily Action Step</span>
-      </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" id="top">
+        <span class="brand__mark" aria-hidden="true">
+          <img src="assets/shattered-cross.svg" alt="" width="28" height="40" />
+        </span>
+        <span class="brand__text">
+          <span class="brand__primary">Exposing Control</span>
+          <span class="brand__secondary">The Brief</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#watch">Watch</a>
+        <a href="#investigations">Investigations</a>
+        <a href="#brief">The Brief</a>
+        <a href="#about">About</a>
+        <a class="btn btn--primary btn--nav" href="#brief">Join the Brief</a>
+      </nav>
     </div>
-    <div class="hero__viz">
-      <div class="meter">
-        <div class="meter__scale"><span>1</span><span>3</span><span>5</span><span>7</span><span>10</span></div>
-        <div class="meter__needle" style="--score:8.3"></div>
-        <div class="meter__label"><strong>Today’s Shock:</strong> 8.3 <em>Elevated</em></div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">Exposing Control · Independent investigations</p>
+          <h1 id="hero-title">Expose the systems shaping your world.</h1>
+          <p class="lede">Power. Control. Hidden history. AI. Disclosure. We ask the questions others avoid and follow the evidence wherever it leads.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary btn--lg" href="https://www.youtube.com/@exposingcontrol" target="_blank" rel="noopener noreferrer">Watch Exposing Control</a>
+            <a class="btn btn--ghost btn--lg" href="#brief">Join the Brief</a>
+          </div>
+          <p class="hero-note">Evidence before conclusion. Claims are labeled. What cannot be verified stays unknown.</p>
+        </div>
+
+        <figure class="hero-stage">
+          <div class="hero-stage__letterbox" aria-hidden="true"></div>
+          <div class="asset-slot" data-expected-file="assets/logo.svg">
+            <p class="asset-slot__label">Asset slot · official logo pending · <code>assets/logo.svg</code></p>
+            <img class="hero-stage__cross" src="assets/shattered-cross.svg" alt="" width="180" height="252" />
+            <img class="hero-stage__wordmark" src="assets/wordmark.svg" alt="Exposing Control placeholder wordmark. Not the official logo." width="420" height="118" />
+          </div>
+          <div class="hero-stage__letterbox" aria-hidden="true"></div>
+          <figcaption>Placeholder motif and wordmark for layout. Official brand artwork is not in this repository.</figcaption>
+        </figure>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="strip"><p>Built by <strong>@ExposingControl</strong> • Join the first 1,000 members for founder pricing.</p></section>
-
-  <section id="features" class="features">
-    <h2>What you get</h2>
-    <div class="grid">
-      <article class="card"><h3>Daily Threat Brief</h3><p>Shock Factor™, confidence %, and a clear action step.</p></article>
-      <article class="card"><h3>My Area Alerts</h3><p>Geo-targeted weather, disaster, outage, and keyword alerts.</p></article>
-      <article class="card"><h3>Auto-Clipped News</h3><p>Instant branded clips to X & YouTube.</p></article>
-      <article class="card"><h3>Prepper Tools</h3><p>Bug-out bag checklist, water & power calculators, offline packs.</p></article>
-      <article class="card"><h3>Intelligence Vault</h3><p>Archive of briefs, clips, and evergreen deep-dives.</p></article>
-      <article class="card"><h3>Pro Automations</h3><p>Calendar + Critical Override for ≥ 9 (double-confirm logic).</p></article>
-    </div>
-  </section>
-
-  <section id="how" class="how">
-    <h2>How it works</h2>
-    <ol class="steps">
-      <li><strong>Scan:</strong> AI watches news & official feeds 24/7.</li>
-      <li><strong>Score:</strong> Events get a 1–10 Shock Factor™ with confidence and sources.</li>
-      <li><strong>Act:</strong> Get a 60s brief + action, with local alerts if it’s near you.</li>
-      <li><strong>Amplify:</strong> Auto-clip the best 15–60s and post to X/YouTube.</li>
-    </ol>
-  </section>
-
-  <section id="pricing" class="pricing">
-    <h2>Pricing</h2>
-    <div class="tiers">
-      <div class="tier">
-        <h3>Free</h3>
-        <ul>
-          <li>Today’s global Shock score</li>
-          <li>2 brief cards/day (blur after)</li>
-          <li>Limited local alerts</li>
+    <section class="section lanes" id="investigations" aria-labelledby="lanes-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker">Investigation lanes</p>
+          <h2 id="lanes-title">Where the questions begin</h2>
+          <p class="section-intro">Five editorial desks. Each one starts with a record, a structure, or a claim—and stays with it until the evidence runs out.</p>
+        </header>
+        <ul class="lane-grid">
+          <li class="lane-card">
+            <p class="lane-card__code">01</p>
+            <h3>Hidden History Files</h3>
+            <p>Archival paper, declassified files, and the stories institutions would rather leave unread. Dates, authors, and missing pages first.</p>
+          </li>
+          <li class="lane-card">
+            <p class="lane-card__code">02</p>
+            <h3>AI Control Room</h3>
+            <p>Who builds the models, who sets the guardrails, who buys the access, and what remains off the record.</p>
+          </li>
+          <li class="lane-card">
+            <p class="lane-card__code">03</p>
+            <h3>Power Behind the System</h3>
+            <p>Follow the structure: money, law, enforcement, and the people who sit at the junctions of all three.</p>
+          </li>
+          <li class="lane-card">
+            <p class="lane-card__code">04</p>
+            <h3>Disclosure Watch</h3>
+            <p>Claims of revelation, measured against documents, timestamps, and what can actually be shown.</p>
+          </li>
+          <li class="lane-card">
+            <p class="lane-card__code">05</p>
+            <h3>Conspiracy: Verified?</h3>
+            <p>Popular claims, stress-tested. Evidence, counterevidence, and a verdict—or an honest unknown.</p>
+          </li>
         </ul>
-        <div class="price">$0</div>
       </div>
-      <div class="tier tier--pro">
-        <h3>Pro</h3>
-        <ul>
-          <li>Full Daily Brief + archives</li>
-          <li>My Area alerts + push</li>
-          <li>Auto-Clip & scheduling calendar</li>
-          <li>Prepper tools + offline packs</li>
-          <li>Critical Override for ≥ 9</li>
+    </section>
+
+    <section class="section workflow" id="method" aria-labelledby="method-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker">Method</p>
+          <h2 id="method-title">How We Investigate</h2>
+          <p class="section-intro">A public workflow. Original analysis and reaction—not recycled clips. Tough questions, counterevidence, and uncertainty stay in the frame.</p>
+        </header>
+        <ol class="process">
+          <li class="process__step">
+            <span class="process__num">1</span>
+            <strong>Source</strong>
+            <span>Where the record comes from, and whether it can be produced.</span>
+          </li>
+          <li class="process__step">
+            <span class="process__num">2</span>
+            <strong>Claims</strong>
+            <span>What is actually being asserted—separated from rumor and framing.</span>
+          </li>
+          <li class="process__step">
+            <span class="process__num">3</span>
+            <strong>Evidence</strong>
+            <span>Documents, data, testimony, and what they can reasonably support.</span>
+          </li>
+          <li class="process__step">
+            <span class="process__num">4</span>
+            <strong>Counterevidence</strong>
+            <span>The strongest case against the claim, on the record.</span>
+          </li>
+          <li class="process__step">
+            <span class="process__num">5</span>
+            <strong>Analysis</strong>
+            <span>Independent reading of the file. Questions that still need answers.</span>
+          </li>
+          <li class="process__step">
+            <span class="process__num">6</span>
+            <strong>Verdict / Unknown</strong>
+            <span>What holds, what fails, and what remains unknown.</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section labels" id="labels" aria-labelledby="labels-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker">Standards</p>
+          <h2 id="labels-title">How we label evidence</h2>
+          <p class="section-intro">Status is not a vibe. Every serious claim on Exposing Control should carry one of these marks—and keep it until the record changes.</p>
+        </header>
+        <ul class="label-grid">
+          <li>
+            <span class="tag tag--verified">Verified</span>
+            <p>Supported by primary documents, on-the-record statements, or other evidence that can be independently checked.</p>
+          </li>
+          <li>
+            <span class="tag tag--alleged">Alleged</span>
+            <p>Asserted by a source or filing, not established as fact. Reported as a claim, with the source visible.</p>
+          </li>
+          <li>
+            <span class="tag tag--disputed">Disputed</span>
+            <p>Credible parties disagree, or the record contains material conflict. Both sides stay in view.</p>
+          </li>
+          <li>
+            <span class="tag tag--speculative">Speculative</span>
+            <p>A hypothesis or pattern worth testing. Not presented as a finding.</p>
+          </li>
+          <li>
+            <span class="tag tag--unknown">Unknown</span>
+            <p>The file is incomplete, inaccessible, or silent. We say so instead of filling the gap.</p>
+          </li>
         </ul>
-        <div class="price">$13.33<span>/mo</span></div>
-        <a href="#join" class="btn btn--block">Start 7-day free trial</a>
-        <p class="small mt4">or $111/year</p>
       </div>
+    </section>
+
+    <section class="section samples" id="samples" aria-labelledby="samples-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker">Desk preview</p>
+          <h2 id="samples-title">Sample investigations</h2>
+          <p class="section-intro">Illustrative placeholders only. These are generic files to show format—not current news, not findings, and not reports in progress.</p>
+        </header>
+        <div class="sample-grid">
+          <article class="sample-card">
+            <div class="sample-card__meta">
+              <span class="tag tag--sample">Sample / Illustrative</span>
+              <span class="sample-card__lane">Hidden History Files</span>
+            </div>
+            <h3>File 00 — The Unnamed Committee</h3>
+            <p>When a public body meets off-calendar, what paper should exist, who is required to keep it, and how would a researcher know it was missing?</p>
+            <p class="sample-card__q"><span>Question, not a finding.</span> What does a complete minute-book look like—and what does an incomplete one prove?</p>
+            <div class="tag-row">
+              <span class="tag tag--speculative">Speculative</span>
+              <span class="tag tag--unknown">Unknown</span>
+            </div>
+            <p class="sample-card__disclaimer">Placeholder card. No real committee, document set, or allegation is being reported here.</p>
+          </article>
+
+          <article class="sample-card">
+            <div class="sample-card__meta">
+              <span class="tag tag--sample">Sample / Illustrative</span>
+              <span class="sample-card__lane">AI Control Room</span>
+            </div>
+            <h3>Access Without a Paper Trail</h3>
+            <p>A generic scenario: a public agency deploys a model. Which contracts, evaluations, and human-review rules should be public—and which often are not?</p>
+            <p class="sample-card__q"><span>Question, not a finding.</span> If oversight exists only as a slide deck, what can be verified?</p>
+            <div class="tag-row">
+              <span class="tag tag--alleged">Alleged</span>
+              <span class="tag tag--disputed">Disputed</span>
+            </div>
+            <p class="sample-card__disclaimer">Placeholder card. No vendor, agency, or product is named as fact.</p>
+          </article>
+
+          <article class="sample-card">
+            <div class="sample-card__meta">
+              <span class="tag tag--sample">Sample / Illustrative</span>
+              <span class="sample-card__lane">Disclosure Watch</span>
+            </div>
+            <h3>A Drop Is Not a Document</h3>
+            <p>How this desk would treat a sudden “release”: origin, chain of custody, what the files actually say, and what they do not.</p>
+            <p class="sample-card__q"><span>Question, not a finding.</span> What can be authenticated, and what remains a screenshot?</p>
+            <div class="tag-row">
+              <span class="tag tag--disputed">Disputed</span>
+              <span class="tag tag--unknown">Unknown</span>
+            </div>
+            <p class="sample-card__disclaimer">Placeholder card. Not tied to any current disclosure claim.</p>
+          </article>
+
+          <article class="sample-card">
+            <div class="sample-card__meta">
+              <span class="tag tag--sample">Sample / Illustrative</span>
+              <span class="sample-card__lane">Conspiracy: Verified?</span>
+            </div>
+            <h3>Claim, Counter, Gap</h3>
+            <p>A format test: state a popular claim in one sentence, list the best evidence for it, list the best evidence against it, then mark a verdict or unknown.</p>
+            <p class="sample-card__q"><span>Question, not a finding.</span> If the strongest proof is still a rumor, what should the headline be?</p>
+            <div class="tag-row">
+              <span class="tag tag--speculative">Speculative</span>
+              <span class="tag tag--verified">Verified</span>
+            </div>
+            <p class="sample-card__disclaimer">Placeholder card. “Verified” here refers only to the public existence of the claim-and-counter format, not to any conspiracy.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section watch" id="watch" aria-labelledby="watch-title">
+      <div class="wrap watch-panel">
+        <div>
+          <p class="kicker">Watch</p>
+          <h2 id="watch-title">The work on camera</h2>
+          <p>Original analysis and reaction. Questions asked in public. No stand-in video on this page—watch the channel itself.</p>
+        </div>
+        <a class="btn btn--primary btn--lg" href="https://www.youtube.com/@exposingcontrol" target="_blank" rel="noopener noreferrer">YouTube @exposingcontrol</a>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+        <header class="section-head">
+          <p class="kicker">About</p>
+          <h2 id="about-title">Challenge the system. Follow the file.</h2>
+        </header>
+        <div class="about-copy">
+          <p>Exposing Control investigates concentrated power, systems of control, hidden history, AI and surveillance, disclosure, and contested claims. The posture is adversarial toward tyranny, secrecy, and unaccountable institutions—not toward the truth.</p>
+          <p>We ask difficult questions. We do not launder unverified accusations into established fact. Where the record is strong, we say so. Where it is alleged, disputed, speculative, or unknown, the label stays on the claim.</p>
+          <p>The Brief is the companion layer: a future email and intelligence digest from the same desks. It is not live on this page.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section brief" id="brief" aria-labelledby="brief-title">
+      <div class="wrap brief-grid">
+        <div>
+          <p class="kicker">The Exposing Control Brief</p>
+          <h2 id="brief-title">Intelligence, in writing.</h2>
+          <p>A future email companion from the same investigation lanes: sources, claims, counterevidence, and what remains unknown. Built for readers who want the file, not the panic.</p>
+          <p class="brief-disclaimer"><strong>Signup is not active.</strong> The form below is a visual preview only. It does not subscribe, store, or send email.</p>
+        </div>
+        <form class="brief-card" id="brief-form" action="#brief" method="post">
+          <p class="brief-card__eyebrow">Preview · not connected</p>
+          <label for="brief-email">Email</label>
+          <input id="brief-email" name="email" type="email" autocomplete="email" placeholder="you@domain.com" />
+          <button class="btn btn--primary btn--block" type="submit">Notify me when The Brief opens</button>
+          <p class="form-status" id="brief-form-status" role="status" aria-live="polite">This control is a mockup. No mailing list is running on this page.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section membership" id="membership" aria-labelledby="membership-title">
+      <div class="wrap membership-panel">
+        <p class="kicker">Support</p>
+        <h2 id="membership-title">Membership</h2>
+        <p class="coming-soon">Coming Soon</p>
+        <p>Direct support for independent investigations will live here when it is ready. This page does not accept payments, trials, or founder offers.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <p class="brand__primary">Exposing Control</p>
+        <p class="brand__secondary">The Brief</p>
+        <p class="footer-copy">© <span id="year">2026</span> Exposing Control. Evidence before conclusion.</p>
+      </div>
+      <nav class="footer-social" aria-label="Social">
+        <a href="https://www.youtube.com/@exposingcontrol" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://www.tiktok.com/@exposing.control5" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://x.com/exposingcontrol" target="_blank" rel="noopener noreferrer">X</a>
+      </nav>
     </div>
-  </section>
+  </footer>
 
-  <section id="join" class="join">
-    <h2>Get early access</h2>
-    <p>Join the list and be first to try Pro when we open the doors.</p>
-    <!-- FASTEST: Formspree. Create a form and replace YOUR_FORM_ID below -->
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="join__form">
-      <input type="email" name="email" placeholder="your@email.com" required />
-      <button class="btn" type="submit">Join the waitlist</button>
-    </form>
-    <p class="micro">By joining, you agree to our <a href="#!">Terms</a> and <a href="#!">Privacy</a>.</p>
-  </section>
-
-  <section id="faq" class="faq">
-    <h2>FAQ</h2>
-    <details><summary>Do I need GoDaddy’s builder?</summary><p>No. Keep GoDaddy as registrar and point DNS to Vercel. You’ll use this custom page.</p></details>
-    <details><summary>When does Pro launch at $13.33?</summary><p>Sign up for the waitlist — Pro opens soon.</p></details>
-    <details><summary>What is Shock Factor™?</summary><p>A 1–10 daily risk score with transparent rubric and confidence.</p></details>
-  </section>
-</main>
-
-<footer class="footer">
-  <div>© <span id="year"></span> Exposing Control</div>
-  <div class="footer__links">
-    <a href="#!">Terms</a><a href="#!">Privacy</a>
-    <a href="https://x.com/ExposingControl" target="_blank" rel="noopener">X</a>
-    <a href="#" target="_blank" rel="noopener">YouTube</a>
-  </div>
-</footer>
-
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
 </body>
 </html>
